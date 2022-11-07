@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.main-container {
+  max-height: 100vh;
+}
+.main-wraper {
+  width: 1000px;
+  height: 500px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.logo-design {
+  width: 50px;
+}
+a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  margin: auto 10px;
+  gap: 10px;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 15px;
+  height: 500px;
+}
+
+.card-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  max-width: 100%;
+}
+.card-1-img {
+  max-width: 100%;
+}
+.card-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.card-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 100%;
+  background-color: hsl(240, 100%, 5%);
+}
+.card-3-display {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+  margin-left: 20px;
+  text-align: left;
+}
+h3 {
+  margin-top: 10px;
+  color: hsl(35, 77%, 62%);
+  text-align: left;
+  font-size: 2em;
+}
+h4:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.title-display {
+  text-align: left;
+}
+.card-4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.card-4-display {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: hsl(240, 100%, 5%);
+}
+button {
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  border: none;
+  padding: 10px 20px;
+  width: 50%;
+}
+button:hover {
+  background-color: hsl(240, 100%, 5%);
+  cursor: pointer;
+}
+.card-5 {
+  display: flex;
+  gap: 10px;
+}
+.card-6 {
+  display: flex;
+  gap: 10px;
+}
+.card-7 {
+  display: flex;
+  gap: 10px;
+}
+.card-display {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+.number-style {
+  color: hsl(233, 8%, 79%);
+  text-align: start;
+  font-size: 1.5em;
+}
+p {
+  font-size: 15px;
+  color: hsl(236, 13%, 42%);
+}
+.img-sizing {
+  height: 150px;
+}
+@media only screen and (max-width: 375px) {
+  nav {
+    position: fixed;
+  }
+  a {
+    display: none;
+  }
+  .main-wraper {
+    max-width: 250px;
+  }
+  main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+}
